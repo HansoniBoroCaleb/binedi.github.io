@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edikan Keren Hanson</title>
+    <meta name="description" content="welcome to the world of keren">
+    <link rel="stylesheet" href="styles.css">
+ </head>
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>EDIKAN KEREN HANSON</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper1 portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image1.jpeg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/cruise-ship bare.png" alt="">
+                        </div>
+                        <a href="travel.html">
+                            <div class="subtitle">
+                            TRAVEL
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper2 portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image2.jpeg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/instagram-bare.png" alt="">
+                        </div>
+                        <a href="https://www.instagram.com/hisbrownpoet/">
+                            <div class="subtitle">
+                                INSTAGRAM
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper3 portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image3.jpeg)">
+                    </div> 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/books bare.png" alt="">
+                        </div>
+                      <a href="books.html">
+                        <div class="subtitle">
+                            BOOKS
+                        </div>
+                      </a>  
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper4 portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image5.jpeg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/hand-with-pen bare.png" alt="">
+                        </div>
+                        <a href="https://aheartandapen.blogspot.com">
+                            <div class="subtitle">
+                                POEMS
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper5 portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image0.jpeg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/meeting bare.png" alt="">
+                        </div>
+        
+                       <a href="brandpartnerships.html">
+                        <div class="subtitle">
+                            BRAND PARTNERSHIPS
+                        </div>
+                       </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper6 portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image4.jpeg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/contact-card  bare.png" alt="">
+                        </div>
+                       <a href="ratecard.html">
+                           <div class="subtitle">
+                            RATE CARD
+                           </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+ </html>
